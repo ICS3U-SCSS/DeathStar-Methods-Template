@@ -121,30 +121,51 @@ namespace DeathStarExhaustPort
         public void Xwing(float x, float y, float width, float height)
         {
             Pen shipPen = new Pen(Color.White);
+
+            /// Use the rectangle below for testing purposes. 
+            /// Your shape should always draw within this rectangle, reglardless of size and position.
+            /// Comment it out when you are done.
             offScreen.DrawRectangle(shipPen, x, y, width, height);
+
         }
 
         public void Torpedo(float x, float y, float pixels)
         {
             Pen torpPen = new Pen(Color.White);
+
+            /// Use the rectangle below for testing purposes. 
+            /// Your shape should always draw within this rectangle, reglardless of size and position.
+            /// Comment it out when you are done.
             offScreen.DrawRectangle(torpPen, x, y, pixels, pixels);
         }
 
         public void Explosion(float x, float y, float pixels)
         {
             Pen exPen = new Pen(Color.White);
-            offScreen.DrawRectangle(exPen, x, y, pixels, pixels);
+
+            /// Use the rectangle below for testing purposes. 
+            /// Your shape should always draw within this rectangle, reglardless of size and position.
+            /// Comment it out when you are done.
+            offScreen.DrawRectangle(exPen, x, y, pixels, pixels);           
         }
 
         public void DeathStar(float x, float y, float pixels)
         {
             Pen deathPen = new Pen(Color.White);
+
+            /// Use the rectangle below for testing purposes. 
+            /// Your shape should always draw within this rectangle, reglardless of size and position.
+            /// Comment it out when you are done.
             offScreen.DrawEllipse(deathPen, x, y, pixels, pixels);
         }
 
         public void ExhaustPort(float x, float y, float width, float height)
         {
             Pen exPen = new Pen(Color.White);
+
+            /// Use the rectangle below for testing purposes. 
+            /// Your shape should always draw within this rectangle, reglardless of size and position.
+            /// Comment it out when you are done.
             offScreen.DrawRectangle(exPen, x, y, width, height);
         }
 
@@ -155,14 +176,14 @@ namespace DeathStarExhaustPort
 
         private void partButton_Click(object sender, EventArgs e)
         {
-            
             offScreen.Clear(Color.Black); // do not remove
 
-            ///call your method here. This is where you can adjust the location and size 
-            ///to make sure that it draws on the screen correctly.
-            Xwing(0, 0, 100, 100);
+            /// Call your method here. This is where you can adjust the location and size 
+            /// to make sure that it draws on the screen correctly.
+            Xwing(0, 0, 100, 50);
 
-            //draws to the screen 
+
+            // Draws to the screen 
             onScreen.DrawImage(bm, 0, 0);
         }
     }
