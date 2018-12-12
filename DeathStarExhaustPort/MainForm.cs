@@ -55,7 +55,7 @@ namespace DeathStarExhaustPort
                 DeathStar(55, 55, 400);
 
                 ExhaustPort(245, 62, 20, 205);
-                Xwing(shipX, shipY, 30, 10);
+                Xwing(shipX, shipY, 30, 15);
 
                 onScreen.DrawImage(bm, 0, 0);
             }
@@ -77,7 +77,7 @@ namespace DeathStarExhaustPort
                 
                 DeathStar(55, 55, 400);
                 ExhaustPort(245, 62, 20, 205);
-                Xwing(shipX, shipY, 30, 10);
+                Xwing(shipX, shipY, 30, 15);
                 Torpedo(torpedoX, torpedoY, 20);
 
                 onScreen.DrawImage(bm, 0, 0);
@@ -93,7 +93,7 @@ namespace DeathStarExhaustPort
                 
                 DeathStar(55, 55, 400);
                 ExhaustPort(245, 62, 20, 205);
-                Xwing(shipX, shipY, 30, 10);
+                Xwing(shipX, shipY, 30, 8);
                 Torpedo(torpedoX, torpedoY, 20);
 
                 onScreen.DrawImage(bm, 0, 0);
